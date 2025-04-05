@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+</head>
+<body>
+    <r1>registration form</r1>
+    <form action="/action">
+        <div>
+        <input type="text" placeholder="first name" name="fname">
+        <input type="text" placeholder="last name" name="lname">
+    </div>
+    <div>
+        <select name="gender" id="gender">
+            <option value="m">male</option>
+            <option value="f">female</option>
+            <option value="o">other</option>
+        </select>
+    </div>
+    <div>
+    do you agree to all term of service ?
+    <input type="checkbox" id="tos" name="tos">
+    <label for="tos">yes,i gree </label>
+    </div>
+    <button>register</button>
+
+    </form>
+    <hr>
+
+    <table border="black">
+        <caption>student information</caption>
+        <tr>
+            <th rowspan="6">info</th>
+            <th rowspan="2">name</th>
+            <th colspan="2">address</th>
+        </tr>
+        <tr>
+            <td>city</td>
+            <td>house</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>pune</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <form action="/action">
+        <div>
+        <label for="name">name :</label>
+        <input type="text" name="name">
+        </div>
+        <div>
+            <label for="sex">sex:</label>
+            <input type="radio" name="sex" id="male" value="male" >
+            <label for="male" >male</label> 
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">female</label>
+        </div>
+        <div>
+            <label for="country">country :</label>
+            <select name="country" id="country">
+                <option>select an option</option>
+                <option value="india">india</option>
+                <option value="usa">usa</option>
+                <option value="uk">uk</option>
+                <option value="china">china</option>
+            </select>
+        </div>
+        <label for="message">message:</label>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        <div>
+            <input type="checkbox" name="letter" id="letter">
+            <label for="letter">subscribe?</label>
+        </div>
+        <button>submit</button>
+
+    </form>
+    <hr>
+    <br>
+    <h1>feedback form</h1>
+    <form action="/server">
+        <div>
+            <label for="name">name :</label>
+            <input type="text" placeholder="write your name" id="name">
+
+        </div>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" placeholder="write your email" id="email">
+
+        </div>
+        <div>
+            <label for="message">message :</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="rating">rate us our of 5:</label>
+            <input type="radio" name="rating" id="one" value="one">
+            <label for="one">1</label>
+            <input type="radio" name="rating" id="two" value="two">
+            <label for="two">2</label>
+            <input type="radio" name="rating" id="three" value="three">
+            <label for="three">3</label>
+            <input type="radio" name="rating" id="four" value="four">
+            <label for="four">4</label>
+            <input type="radio" name="rating" id="five" value="five">
+            <label for="five">5</label>
+        </div>
+        <button>send your message!</button>
+    </form>
+</body>
+</html>
